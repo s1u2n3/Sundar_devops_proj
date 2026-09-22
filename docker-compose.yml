@@ -1,0 +1,7 @@
+services:
+  app:
+    image: sundar-devops-app:latest
+    container_name: sundar-devops-app
+    ports:
+      - "80:80"
+    restart: unless-stopped
