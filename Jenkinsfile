@@ -61,7 +61,7 @@ pipeline {
 
             steps {
                 echo 'Deploying production application...'
-                sh './deploy.sh'
+                sh 'chmod +x deploy.sh && ./deploy.sh'
             }
         }
     }
