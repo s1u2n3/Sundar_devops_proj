@@ -1,6 +1,6 @@
 services:
   app:
-    image: sundar-devops-app:latest
+    image: ${IMAGE_NAME:-sund123/prod}:${IMAGE_TAG:-latest}
     container_name: sundar-devops-app
     ports:
       - "80:80"
